@@ -1,0 +1,32 @@
+import os
+import random
+
+def RunNotepad():
+    os.system("notepad")
+
+def Reload():
+    print(" ")
+    print("Here are some helpful programming keywords: ", random.choices(idea_gen_list, k=5))
+    #print(" ")
+    #print(random.choices(idea_gen_list, k=5))
+    print(" ")
+    x = input("What is your program idea(s)? ")
+    print(" ")
+    print("----- Program idea(s): " + x.title() + " -----")
+    
+idea_gen_list = ("Health", "Automation", "pdf", "Scraping", "Transfer", "Tech", "GUI", "Money" ,"School", "Work", "Positive", "Dashboard", "Email", "Algorithm", "Bandwidth", "Browser", "CD-R", "Link", "Template", "Website", "Notepad", "Login", "Beginner", "Intermediate", "Advanced")
+print(" ")
+repeat = input("Start generating program ideas? Press (Enter) to start or (e) to exit " )
+#reload_program_ideas = Reload()
+
+while repeat != "e":
+    Reload()
+    print(" ")
+    repeat = input("Try making another idea(s)? Press (Enter) to start or (e) to exit ")
+
+if repeat == "e":
+    RunNotepad()
+
+'''
+Make ASCII GUI
+'''
