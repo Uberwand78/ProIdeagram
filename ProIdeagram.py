@@ -13,7 +13,6 @@ def Reload():
     print("----- Program idea(s): " + x.title() + " -----")
 
 # list of lists
-# # try making user defined list using methods like .append()
 idea_list_1 = ["Health", "Automation", "pdf", "Scraping", "Transfer"]
 idea_list_2 = ["Tech", "GUI", "Money" ,"School", "Work"]
 idea_list_3 = ["Positive", "Dashboard", "Email", "Algorithm", "Bandwidth"]
@@ -28,15 +27,7 @@ while repeat != "e":
     Reload()
     print(" ")
     repeat = input("Try making another idea(s)? Press (Enter) to start or (e) to exit ")
-
-#while True:
-#    y = input("Try making another idea(s)? Press (Enter) to start or (e) to exit ")
-#    if y[0].lower() != "e":
-#        Reload()
-#    else:
-#        continue #continue, break, return??
-
+    
+# Open notepad to transpose ideas     
 if repeat == "e":
     RunNotepad()
-
-# Make ASCII GUI
