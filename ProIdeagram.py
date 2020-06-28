@@ -4,6 +4,7 @@ import random
 def RunNotepad():
     os.system("notepad")
 
+# Generate 5 programming words from idea_gen_list
 def Reload():
     print(" ")
     print("Here are some helpful programming keywords: ", random.choices(idea_gen_list, k=5))
