@@ -13,7 +13,7 @@ def Reload():
     print(" ")
     print("----- Program idea(s): " + x.title() + " -----")
 
-# list of lists
+# List of lists
 idea_list_1 = ["Health", "Automation", "pdf", "Scraping", "Transfer"]
 idea_list_2 = ["Tech", "GUI", "Money" ,"School", "Work"]
 idea_list_3 = ["Positive", "Dashboard", "Email", "Algorithm", "Bandwidth"]
