@@ -1,1 +1,1 @@
-ProIdeagram helps programmers to come up with new project ideas.
+ProIdeagram helps programmers come up with new project ideas.
