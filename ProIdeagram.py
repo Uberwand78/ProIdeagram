@@ -1,6 +1,7 @@
 import os
 import random
 
+# Open Notepad
 def RunNotepad():
     os.system("notepad")
 
@@ -32,6 +33,6 @@ while repeat != "e":
     repeat = input("Try making another idea(s)? Press (Enter) to start or (e) to exit: ")
     repeat.lower()
     
-# Exit and open notepad to transpose ideas     
+# Exit and open Notepad
 if repeat == "e":
     RunNotepad()
