@@ -24,7 +24,7 @@ idea_gen_list = idea_list_1 + idea_list_2 + idea_list_3 + idea_list_4 + idea_lis
 
 # Opening statement
 print(" ")
-repeat = input("Start generating program ideas? Press (Enter) to start or (e) to exit: " )
+repeat = input("Start generating program ideas? Press (Enter) to start or (e) to exit: ")
 
 # Body
 while repeat != "e":
