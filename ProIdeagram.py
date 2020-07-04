@@ -13,7 +13,7 @@ def Reload():
     x = input("What is your program idea(s)? ")
     x = x.title()
     print(" ")
-    print("<> Program idea(s): >>>>> " + x + " <<<<<")
+    print("<> Program idea(s): ", x)
 
 # List of lists
 idea_list_1 = ["Health", "Automation", "pdf", "Scraping", "Transfer"]
