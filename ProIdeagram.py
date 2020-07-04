@@ -37,5 +37,5 @@ while start_exit != "e":
     start_exit.lower()
     
 # Exit and open Notepad
-if repeat == "e":
+if start_exit == "e":
     RunNotepad()
