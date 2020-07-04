@@ -11,8 +11,9 @@ def Reload():
     print("Here are some helpful programming keywords: ", random.sample(idea_gen_list, k=5))
     print(" ")
     x = input("What is your program idea(s)? ")
+    x = x.title()
     print(" ")
-    print("----- Program idea(s): " + x.title() + " -----")
+    print("<> Program idea(s): >>>>> " + x + " <<<<<")
 
 # List of lists
 idea_list_1 = ["Health", "Automation", "pdf", "Scraping", "Transfer"]
