@@ -5,7 +5,7 @@ import random
 def RunNotepad():
     os.system("notepad")
 
-# Generate 5 random, non-reoccuring programming words (using .sample) from idea_gen_list
+# Generate 5 random, non-reoccuring programming words (using .sample) from idea_lists_combined
 def GenerateIdeas():
     print(" ")
     list_randomized = random.sample(idea_lists_combined, k=5)
