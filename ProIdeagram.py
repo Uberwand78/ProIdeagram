@@ -14,7 +14,7 @@ def GenerateIdeas():
     idea_input = input("What is your program idea(s)? ")
     idea_input = idea_input.title()
     print(" ")
-    print("<> Program idea(s): ", idea_input)
+    print("Program idea(s): ", idea_input)
 
 # List of lists
 idea_list_1 = ["Health", "Automation", "pdf", "Scraping", "Transfer"]
