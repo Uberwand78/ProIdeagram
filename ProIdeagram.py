@@ -8,6 +8,7 @@ def RunNotepad():
 def GenerateIdeas():
     print("")
     list_randomized = random.sample(idea_lists_combined, k=5)
+    list_randomized.sort()
     print("Here are some helpful programming keywords: ", list_randomized)
     print("")
     idea_input = input("What is your program idea(s)? ")
@@ -24,6 +25,7 @@ idea_list_5 = ["Notepad", "Login", "Beginner", "Intermediate", "Advanced"]
 idea_lists_combined = idea_list_1 + idea_list_2 + idea_list_3 + idea_list_4 + idea_list_5
 
 # Opening statement
+print("Welcome to ProIdeagram!")
 print("")
 start_exit = input("Start generating program ideas? Press (Enter) to start or (e) to exit: ")
 start_exit = start_exit.lower()
