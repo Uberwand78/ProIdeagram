@@ -1,5 +1,4 @@
-import os
-import random
+import random, os
 
 # Open Notepad
 def RunNotepad():
