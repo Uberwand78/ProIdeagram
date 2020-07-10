@@ -7,13 +7,13 @@ def RunNotepad():
 
 # Generate 5 random, non-reoccuring programming words (.sample) from idea_lists_combined
 def GenerateIdeas():
-    print(" ")
+    print("")
     list_randomized = random.sample(idea_lists_combined, k=5)
     print("Here are some helpful programming keywords: ", list_randomized)
-    print(" ")
+    print("")
     idea_input = input("What is your program idea(s)? ")
     idea_input = idea_input.title()
-    print(" ")
+    print("")
     print("Program idea(s): ", idea_input)
 
 # List of lists
@@ -25,14 +25,14 @@ idea_list_5 = ["Notepad", "Login", "Beginner", "Intermediate", "Advanced"]
 idea_lists_combined = idea_list_1 + idea_list_2 + idea_list_3 + idea_list_4 + idea_list_5
 
 # Opening statement
-print(" ")
+print("")
 start_exit = input("Start generating program ideas? Press (Enter) to start or (e) to exit: ")
 start_exit = start_exit.lower()
 
 # Body
 while start_exit != "e":
     GenerateIdeas()
-    print(" ")
+    print("")
     start_exit = input("Try making another idea(s)? Press (Enter) to start or (e) to exit and open Notepad: ")
     start_exit.lower()
     
