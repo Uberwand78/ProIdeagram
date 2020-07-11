@@ -17,7 +17,7 @@ def GenerateIdeas():
     print("Program idea(s): ", idea_input)
 
 # List of lists
-idea_list_1 = ["Health", "Automation", "pdf", "Scraping", "Transfer"]
+idea_list_1 = ["Health", "Automation", "PDF", "Scraping", "Transfer"]
 idea_list_2 = ["Tech", "GUI", "Money" ,"School", "Work"]
 idea_list_3 = ["Positive", "Dashboard", "Email", "Algorithm", "Bandwidth"]
 idea_list_4 = ["Browser", "CD-R", "Link", "Template", "Website"]
