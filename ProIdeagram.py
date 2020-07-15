@@ -28,14 +28,12 @@ idea_lists_combined = idea_list_1 + idea_list_2 + idea_list_3 + idea_list_4 + id
 print("Welcome to ProIdeagram!")
 print("")
 start_exit = input("Start generating program ideas? Press (Enter) to start or (e) to exit: ")
-start_exit = start_exit.lower()
 
 # Body
 while start_exit != "e":
     GenerateIdeas()
     print("")
     start_exit = input("Try making another idea(s)? Press (Enter) to start or (e) to exit and open Notepad: ")
-    start_exit.lower()
     
 # Exit and open Notepad
 if start_exit == "e":
