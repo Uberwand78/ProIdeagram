@@ -18,6 +18,7 @@ def GenerateIdeas():
     print ('Program idea(s): ', '[%s]' % ', '.join(map(str, ideaList)))    
 
 ideaList = []
+y = 1 
 
 # List of lists
 ideaList1 = ['Health', 'Automation', 'PDF', 'Scraping', 'Transfer']
@@ -50,14 +51,14 @@ while startExit != 'e':
 
 # Open Notepad before exiting to transpose ideas 
 if startExit == 'e':
-    for x in ideaList:
-        print(x)
+    for index, value in enumerate(ideaList, 1):
+        print("{}. {}".format(index, value))      
     print('')
     sortList = input('Sort list? (y) or (n): ')
     print('')
     if sortList == 'y':
         ideaList.sort()
-        for x in ideaList:
-            print(x)   
+        for index, value in enumerate(ideaList, 1):
+            print("{}. {}".format(index, value)) 
     print('')
     RunNotepad()
