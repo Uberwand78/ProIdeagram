@@ -52,13 +52,13 @@ while startExit != 'e':
 # Open Notepad before exiting to transpose ideas 
 if startExit == 'e':
     for index, value in enumerate(ideaList, 1):
-        print("{}. {}".format(index, value))      
+        print(f'{index}. {value}')      
     print('')
     sortList = input('Sort list? (y) or (n): ')
     print('')
     if sortList == 'y':
         ideaList.sort()
         for index, value in enumerate(ideaList, 1):
-            print("{}. {}".format(index, value)) 
+            print(f'{index}. {value}') 
     print('')
     RunNotepad()
