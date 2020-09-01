@@ -18,7 +18,6 @@ def GenerateIdeas():
     print ('Program idea(s): ', '[%s]' % ', '.join(map(str, ideaList)))    
 
 ideaList = []
-y = 1 
 
 # List of lists
 ideaList1 = ['Health', 'Automation', 'PDF', 'Scraping', 'Transfer']
