@@ -7,57 +7,57 @@ def RunNotepad():
     
 # Generate 5 random, non-reoccuring programming words (using .sample) from idea_lists_combined
 def GenerateIdeas():
-    listRandomized = sample(ideaListsCombined, k=5)
-    listRandomized.sort()
-    print ('Here are some helpful programming keywords: ', '[%s]' % ', '.join(map(str, listRandomized)))
+    list_randomized = sample(idea_lists_combined, k=5)
+    list_randomized.sort()
+    print ('Here are some helpful programming keywords: ', '[%s]' % ', '.join(map(str, list_randomized)))
     print('')
-    ideaInput = input('What is your program idea(s)? ')
-    ideaInput = ideaInput.title()
-    ideaList.append(ideaInput)
+    idea_input = input('What is your program idea(s)? ')
+    idea_input = idea_input.title()
+    idea_list.append(idea_input)
     print('')
-    print ('Program idea(s): ', '[%s]' % ', '.join(map(str, ideaList)))    
+    print ('Program idea(s): ', '[%s]' % ', '.join(map(str, idea_list)))    
 
-ideaList = []
+idea_list = []
 
 # List of lists
-ideaList1 = ['Health', 'Automation', 'PDF', 'Scraping', 'Transfer']
-ideaList2 = ['Tech', 'GUI', 'Money' ,'School', 'Work']
-ideaList3 = ['Positive', 'Dashboard', 'Email', 'Algorithm', 'Bandwidth']
-ideaList4 = ['Browser', 'CD-R', 'Link', 'Template', 'Website']
-ideaList5 = ['Notepad', 'Login', 'Beginner', 'Intermediate', 'Advanced']
-ideaListsCombined = ideaList1 + ideaList2 + ideaList3 + ideaList4 + ideaList5
+idea_list_1 = ['Health', 'Automation', 'PDF', 'Scraping', 'Transfer']
+idea_list_2 = ['Tech', 'GUI', 'Money' ,'School', 'Work']
+idea_list_3 = ['Positive', 'Dashboard', 'Email', 'Algorithm', 'Bandwidth']
+idea_list_4 = ['Browser', 'CD-R', 'Link', 'Template', 'Website']
+idea_list_5 = ['Notepad', 'Login', 'Beginner', 'Intermediate', 'Advanced']
+idea_lists_combined = idea_list_1 + idea_list_2 + idea_list_3 + idea_list_4 + idea_list_5
 
 # Opening statement
 print('Welcome to ProIdeagram!')
 print('')
 print('Start generating program ideas?')
 print('')
-startExit = input('Press (Enter) to start or (e) to exit: ')
-startExit = startExit.lower()
-if startExit == 'e':
+start_exit = input('Press (Enter) to start or (e) to exit: ')
+start_exit = start_exit.lower()
+if start_exit == 'e':
     quit()
 print('')
 
 # Body
-while startExit != 'e':
+while start_exit != 'e':
     GenerateIdeas()
     print('')
     print('Make another idea(s)?')
     print('')
-    startExit = input('Press (Enter) to start or (e) to exit and open Notepad: ')
-    startExit = startExit.lower()
+    start_exit = input('Press (Enter) to start or (e) to exit and open Notepad: ')
+    start_exit = start_exit.lower()
     print('')
 
 # Open Notepad before exiting to transpose ideas 
-if startExit == 'e':
-    for index, value in enumerate(ideaList, 1):
+if start_exit == 'e':
+    for index, value in enumerate(idea_list, 1):
         print(f'{index}. {value}')      
     print('')
-    sortList = input('Sort list? (y) or (n): ')
+    sort_list = input('Sort list? (y) or (n): ')
     print('')
-    if sortList == 'y':
-        ideaList.sort()
-        for index, value in enumerate(ideaList, 1):
+    if sort_list == 'y':
+        idea_list.sort()
+        for index, value in enumerate(idea_list, 1):
             print(f'{index}. {value}') 
     print('')
     RunNotepad()
