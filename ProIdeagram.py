@@ -1,8 +1,11 @@
+import time
 from os import system
 from random import sample
 
 # Open Notepad
 def RunNotepad():
+    print('Opening Notepad...')
+    time.sleep(1)
     system('notepad')
     
 # Generate 5 random, non-reoccuring programming words (using .sample) from idea_lists_combined
@@ -15,7 +18,7 @@ def GenerateIdeas():
     idea_input = idea_input.title()
     idea_list.append(idea_input)
     print('')
-    print ('Program idea(s): ', '[%s]' % ', '.join(map(str, idea_list)))    
+    print ('Program idea(s):', '[%s]' % ', '.join(map(str, idea_list)))    
 
 idea_list = []
 
@@ -44,7 +47,7 @@ while start_exit != 'e':
     print('')
     print('Make another idea(s)?')
     print('')
-    start_exit = input('Press (Enter) to start or (e) to exit and open Notepad: ')
+    start_exit = input('Press (Enter) to start or (e) to open Notepad and exit: ')
     start_exit = start_exit.lower()
     print('')
 
